@@ -14,6 +14,12 @@ set expandtab
 
 set backupdir=~/.vim/tmp_backup
 
+set clipboard=unnamedplus
+
+" bash-like tab completion on ex commands
+set wildmode=longest,list,full
+set wildmenu
+
 nnoremap j gj
 nnoremap k gk
 
