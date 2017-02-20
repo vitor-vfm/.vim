@@ -12,7 +12,8 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-set backupdir=~/.vim/tmp_backup
+set backupdir=$HOME/.vim/tmp_backup//
+set directory=$HOME/.vim/tmp_backup//
 
 set clipboard=unnamedplus
 
