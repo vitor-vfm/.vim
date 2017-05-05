@@ -32,6 +32,7 @@ call plug#begin()
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
