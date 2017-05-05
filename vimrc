@@ -46,6 +46,8 @@ Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 " end Plug
 
+" make .pl prolog files instead of perl
+let g:filetype_pl="prolog"
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
