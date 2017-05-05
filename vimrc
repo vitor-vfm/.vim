@@ -38,10 +38,13 @@ Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/syntastic'
+Plug 'scrooloose/nerdtree'
+Plug 'python-mode/python-mode'
 Plug 'wellle/targets.vim'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 " end Plug
@@ -68,3 +71,8 @@ let g:airline_right_sep = ' '
 let g:airline_right_alt_sep = '|'
 " end vim-airline
 
+" Python mode
+set nofoldenable
+
+" NERDTree
+map <C-n> :NERDTreeToggle<CR>
