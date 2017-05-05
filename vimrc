@@ -74,6 +74,7 @@ let g:airline_right_alt_sep = '|'
 
 " Python mode
 set nofoldenable
+let g:pymode_options_colorcolumn = 0
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
