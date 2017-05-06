@@ -1,32 +1,3 @@
-" General settings
-colorscheme delek
-
-syntax enable
-
-set number
-set hidden
-
-set autoindent
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-
-set backupdir=$HOME/.vim/tmp_backup//
-set directory=$HOME/.vim/tmp_backup//
-
-set clipboard=unnamedplus
-
-" bash-like tab completion on ex commands
-" set wildmode=longest,list,full
-" set wildmenu
-
-nnoremap j gj
-nnoremap k gk
-
-nnoremap Y y$
-" end General settings
-
 " Plug
 call plug#begin()
 
@@ -46,12 +17,39 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'jpo/vim-railscasts-theme'
 
 call plug#end()
 " end Plug
 
+" General settings
+colorscheme railscasts
+
+syntax enable
+
+set number
+set hidden
+
+set autoindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+set backupdir=$HOME/.vim/tmp_backup//
+set directory=$HOME/.vim/tmp_backup//
+
+set clipboard=unnamedplus
+
+nnoremap j gj
+nnoremap k gk
+
+nnoremap Y y$
+
 " make .pl prolog files instead of perl
 let g:filetype_pl="prolog"
+
+" end General settings
 
 " Syntastic
 let g:syntastic_mode_map = {"passive_filetypes": ["c"]}
