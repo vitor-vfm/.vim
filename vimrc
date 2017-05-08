@@ -46,6 +46,8 @@ nnoremap k gk
 
 nnoremap Y y$
 
+let mapleader="\<Space>"
+
 " make .pl prolog files instead of perl
 let g:filetype_pl="prolog"
 
