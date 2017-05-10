@@ -11,7 +11,6 @@ Plug 'ervandew/supertab'
 Plug 'majutsushi/tagbar'
 " Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
-Plug 'python-mode/python-mode'
 Plug 'wellle/targets.vim'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'vim-airline/vim-airline'
@@ -72,10 +71,6 @@ let g:airline_left_alt_sep = '|'
 let g:airline_right_sep = ' '
 let g:airline_right_alt_sep = '|'
 " end vim-airline
-
-" Python mode
-set nofoldenable
-let g:pymode_options_colorcolumn = 0
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
