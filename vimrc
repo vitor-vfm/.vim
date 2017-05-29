@@ -51,6 +51,13 @@ let mapleader="\<Space>"
 " make .pl prolog files instead of perl
 let g:filetype_pl="prolog"
 
+"" Personal autocmds
+augroup myvimrc
+    autocmd!
+    """ Open quickfix window after :make, :grep, etc
+    autocmd QuickFixCmdPost * copen
+augroup end
+
 " end General settings
 
 " Syntastic
