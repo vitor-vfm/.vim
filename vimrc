@@ -36,19 +36,22 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
+"" Use a backup directory in .vim for .swp files
 set backupdir=$HOME/.vim/tmp_backup//
 set directory=$HOME/.vim/tmp_backup//
 
 set clipboard=unnamedplus
 
+"" j and k go through screen lines, not actual lines
 nnoremap j gj
 nnoremap k gk
 
+"" Make the behaviour of Y consistent with D and C (from cursor to end of line)
 nnoremap Y y$
 
 let mapleader="\<Space>"
 
-" make .pl prolog files instead of perl
+"" Make .pl prolog files instead of perl
 let g:filetype_pl="prolog"
 
 "" Personal autocmds
@@ -82,3 +85,4 @@ let g:airline_right_alt_sep = '|'
 
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
+" end NERDTree
