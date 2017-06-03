@@ -57,8 +57,8 @@ let g:filetype_pl="prolog"
 "" Personal autocmds
 augroup myvimrc
     autocmd!
-    """ Open quickfix window after :make, :grep, etc
-    autocmd QuickFixCmdPost * copen
+    """ Open quickfix window after :grep
+    autocmd QuickFixCmdPost gr* copen
 augroup end
 
 " end General settings
