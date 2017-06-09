@@ -61,6 +61,11 @@ augroup myvimrc
     autocmd QuickFixCmdPost * copen
 augroup end
 
+"  If it's installed, use Silver Searcher instead of Grep
+if executable("ag")
+    set grepprg=ag
+endif
+
 " end General settings
 
 " Syntastic
