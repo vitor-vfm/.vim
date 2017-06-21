@@ -18,6 +18,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'jpo/vim-railscasts-theme'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'tmux-plugins/vim-tmux'
 
 call plug#end()
 " end Plug
