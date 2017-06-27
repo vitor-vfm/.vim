@@ -24,7 +24,11 @@ call plug#end()
 " end Plug
 
 " General settings
-colorscheme railscasts
+try
+    colorscheme railscasts
+catch /^Vim\%((\a\+)\)\=:E/
+    colorscheme desert
+endtry
 
 syntax enable
 
