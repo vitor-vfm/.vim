@@ -3,12 +3,14 @@ call plug#begin()
 
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'ervandew/supertab'
 Plug 'majutsushi/tagbar'
+Plug 'davidhalter/jedi-vim'
 " Plug 'scrooloose/syntastic'
 Plug 'scrooloose/nerdtree'
 Plug 'wellle/targets.vim'
@@ -18,12 +20,17 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'jpo/vim-railscasts-theme'
 Plug 'ntpeters/vim-better-whitespace'
+Plug 'tmux-plugins/vim-tmux'
 
 call plug#end()
 " end Plug
 
 " General settings
-colorscheme railscasts
+try
+    colorscheme railscasts
+catch /^Vim\%((\a\+)\)\=:E/
+    colorscheme desert
+endtry
 
 syntax enable
 
@@ -60,6 +67,11 @@ augroup myvimrc
     """ Open quickfix window after :grep
     autocmd QuickFixCmdPost gr* copen
 augroup end
+
+"  If it's installed, use Silver Searcher instead of Grep
+if executable("ag")
+    set grepprg=ag
+endif
 
 " end General settings
 
