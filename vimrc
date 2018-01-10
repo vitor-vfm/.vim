@@ -5,6 +5,8 @@ call plug#begin()
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'ervandew/supertab'
+Plug 'godlygeek/tabular'
+Plug 'jacoborus/tender.vim'
 Plug 'jpo/vim-railscasts-theme'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'majutsushi/tagbar'
@@ -20,6 +22,7 @@ Plug 'tpope/vim-sleuth'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-scripts/IndexedSearch'
 Plug 'wellle/targets.vim'
 
 call plug#end()
