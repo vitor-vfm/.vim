@@ -102,3 +102,7 @@ let g:airline_right_alt_sep = '|'
 " NERDTree
 map <C-n> :NERDTreeToggle<CR>
 " end NERDTree
+
+" Jedi
+let g:jedi#popup_on_dot = 0
+" end Jedi
